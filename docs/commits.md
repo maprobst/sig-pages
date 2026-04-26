@@ -1,0 +1,10 @@
+# Commit Log
+
+> Wird bei jedem Push automatisch aktualisiert.
+
+| Datum | Autor | Branch | Commit | Nachricht |
+|:------|:------|:-------|:-------|:----------|
+<!-- COMMITS_START -->
+| 2026-04-25 08:25 UTC | Claude | `claude/github-action-commit-summary-cjoNP` | [12d5efc](https://github.com/maprobst/tools/commit/12d5efccbad6d37f36611835eaf332c3d7028e65) | feat: partial HTML update, tests for commit pipeline scripts |
+| 2026-04-25 08:53 UTC | Claude | `claude/github-action-commit-summary-cjoNP` | [3ac7522](https://github.com/maprobst/tools/commit/3ac75228f3a563a8c925042f28fe561946b07df3) | feat: uv project setup + external style.css for all HTML pages |
+<!-- COMMITS_END -->

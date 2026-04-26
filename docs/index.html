@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Docs</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Header ── */
+        header {
+            padding: 1.25rem 2rem 1rem;
+            border-bottom: 1px solid #30363d;
+        }
+        header h1 { font-size: 1.5rem; font-weight: 600; color: #58a6ff; }
+
+        /* ── Tab nav ── */
+        .tab-nav {
+            display: flex;
+            gap: 0;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 0 1.5rem;
+            overflow-x: auto;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #8b949e;
+            cursor: pointer;
+            font-size: 0.875rem;
+            padding: 0.75rem 1rem;
+            white-space: nowrap;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        .tab-btn:hover  { color: #e6edf3; }
+        .tab-btn.active { color: #e6edf3; border-bottom-color: #f78166; }
+
+        /* ── Tab panels ── */
+        .tab-panel { display: none; padding: 2rem; max-width: 960px; width: 100%; margin: 0 auto; }
+        .tab-panel.active { display: block; }
+
+        /* ── Markdown content styles ── */
+        .tab-panel h1,
+        .tab-panel h2,
+        .tab-panel h3 { margin: 1.5rem 0 0.75rem; color: #e6edf3; }
+        .tab-panel h1 { font-size: 1.5rem; border-bottom: 1px solid #30363d; padding-bottom: 0.4rem; }
+        .tab-panel h2 { font-size: 1.2rem; }
+
+        .tab-panel p  { line-height: 1.7; margin: 0.75rem 0; color: #c9d1d9; }
+        .tab-panel blockquote {
+            border-left: 3px solid #388bfd;
+            padding: 0.4rem 1rem;
+            color: #8b949e;
+            margin: 0.75rem 0;
+            background: #161b22;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .tab-panel a { color: #58a6ff; text-decoration: none; }
+        .tab-panel a:hover { text-decoration: underline; }
+
+        /* ── Tables ── */
+        .tab-panel table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+            margin: 1rem 0;
+        }
+        .tab-panel th {
+            background: #161b22;
+            color: #8b949e;
+            font-weight: 500;
+            text-align: left;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid #30363d;
+        }
+        .tab-panel td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid #21262d;
+            vertical-align: top;
+            word-break: break-word;
+        }
+        .tab-panel tr:hover td { background: #161b22; }
+
+        /* ── Code ── */
+        .tab-panel code {
+            font-family: ui-monospace, monospace;
+            font-size: 0.8rem;
+            background: #161b22;
+            padding: 0.1em 0.4em;
+            border-radius: 4px;
+            color: #f78166;
+        }
+        .tab-panel pre {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .tab-panel pre code { background: none; padding: 0; color: #e6edf3; }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: auto;
+            padding: 1rem 2rem;
+            border-top: 1px solid #21262d;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #484f58;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Docs</h1>
+    </header>
+
+    <nav class="tab-nav" role="tablist" aria-label="Dokumenten-Tabs">
+<!-- GENERATED:NAV_START -->
+        <button role="tab" class="tab-btn active" data-tab="commits" aria-selected="true">Commit Log</button>
+<!-- GENERATED:NAV_END -->
+    </nav>
+
+    <main>
+<!-- GENERATED:MAIN_START -->
+        <section role="tabpanel" id="tab-commits" class="tab-panel active">
+<h1 id="commit-log">Commit Log</h1>
+<blockquote>
+<p>Wird bei jedem Push automatisch aktualisiert.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Datum</th>
+<th style="text-align: left;">Autor</th>
+<th style="text-align: left;">Branch</th>
+<th style="text-align: left;">Commit</th>
+<th style="text-align: left;">Nachricht</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>| 2026-04-25 08:25 UTC | Claude | <code>claude/github-action-commit-summary-cjoNP</code> | <a href="https://github.com/maprobst/tools/commit/12d5efccbad6d37f36611835eaf332c3d7028e65">12d5efc</a> | feat: partial HTML update, tests for commit pipeline scripts |<br />
+| 2026-04-25 08:53 UTC | Claude | <code>claude/github-action-commit-summary-cjoNP</code> | <a href="https://github.com/maprobst/tools/commit/3ac75228f3a563a8c925042f28fe561946b07df3">3ac7522</a> | feat: uv project setup + external style.css for all HTML pages |</p>
+        </section>
+<!-- GENERATED:MAIN_END -->
+    </main>
+
+    <footer>Generiert aus Markdown-Dateien &bull; aktualisiert bei jedem Push</footer>
+
+    <script>
+        const buttons = document.querySelectorAll('.tab-btn');
+        const panels  = document.querySelectorAll('.tab-panel');
+
+        function activate(id) {
+            buttons.forEach(b => {
+                const on = b.dataset.tab === id;
+                b.classList.toggle('active', on);
+                b.setAttribute('aria-selected', String(on));
+            });
+            panels.forEach(p => p.classList.toggle('active', p.id === 'tab-' + id));
+            history.replaceState(null, '', '#' + id);
+        }
+
+        buttons.forEach(b => b.addEventListener('click', () => activate(b.dataset.tab)));
+
+        // Restore tab from URL hash on load
+        const hash = location.hash.slice(1);
+        const initial = hash && document.getElementById('tab-' + hash)
+            ? hash
+            : (buttons[0] && buttons[0].dataset.tab);
+        if (initial) activate(initial);
+    </script>
+</body>
+</html>

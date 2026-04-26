@@ -1,0 +1,151 @@
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Page layout ── */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Header ── */
+header {
+    padding: 1.25rem 2rem 1rem;
+    border-bottom: 1px solid #30363d;
+}
+header h1 { font-size: 1.5rem; font-weight: 600; color: #58a6ff; }
+
+/* ── Tab navigation ── */
+.tab-nav {
+    display: flex;
+    gap: 0;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    padding: 0 1.5rem;
+    overflow-x: auto;
+}
+.tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #8b949e;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+}
+.tab-btn:hover  { color: #e6edf3; }
+.tab-btn.active { color: #e6edf3; border-bottom-color: #f78166; }
+
+/* ── Tab panels ── */
+.tab-panel {
+    display: none;
+    padding: 2rem;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tab-panel.active { display: block; }
+
+/* ── Markdown: headings ── */
+.tab-panel h1,
+.tab-panel h2,
+.tab-panel h3 { margin: 1.5rem 0 0.75rem; color: #e6edf3; }
+.tab-panel h1 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 0.4rem;
+}
+.tab-panel h2 { font-size: 1.2rem; }
+.tab-panel h3 { font-size: 1rem; }
+
+/* ── Markdown: paragraphs & inline ── */
+.tab-panel p  { line-height: 1.7; margin: 0.75rem 0; color: #c9d1d9; }
+
+.tab-panel a { color: #58a6ff; text-decoration: none; }
+.tab-panel a:hover { text-decoration: underline; }
+
+.tab-panel strong { color: #e6edf3; }
+.tab-panel em     { color: #c9d1d9; }
+
+.tab-panel hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 1.5rem 0;
+}
+
+/* ── Markdown: blockquote ── */
+.tab-panel blockquote {
+    border-left: 3px solid #388bfd;
+    padding: 0.4rem 1rem;
+    color: #8b949e;
+    margin: 0.75rem 0;
+    background: #161b22;
+    border-radius: 0 4px 4px 0;
+}
+
+/* ── Markdown: lists ── */
+.tab-panel ul,
+.tab-panel ol {
+    padding-left: 1.5rem;
+    margin: 0.75rem 0;
+    color: #c9d1d9;
+    line-height: 1.7;
+}
+.tab-panel li + li { margin-top: 0.25rem; }
+
+/* ── Markdown: tables ── */
+.tab-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin: 1rem 0;
+}
+.tab-panel th {
+    background: #161b22;
+    color: #8b949e;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #30363d;
+}
+.tab-panel td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #21262d;
+    vertical-align: top;
+    word-break: break-word;
+}
+.tab-panel tr:hover td { background: #161b22; }
+
+/* ── Markdown: code ── */
+.tab-panel code {
+    font-family: ui-monospace, monospace;
+    font-size: 0.8rem;
+    background: #161b22;
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    color: #f78166;
+}
+.tab-panel pre {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+.tab-panel pre code { background: none; padding: 0; color: #e6edf3; }
+
+/* ── Footer ── */
+footer {
+    margin-top: auto;
+    padding: 1rem 2rem;
+    border-top: 1px solid #21262d;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #484f58;
+}
