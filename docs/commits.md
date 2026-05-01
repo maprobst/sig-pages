@@ -19,4 +19,5 @@
 | 2026-04-26 18:05 UTC | maprobst | `main` | [7f31028](https://github.com/maprobst/sig-pages/commit/7f310287c3ad712bdaa46dbe3b531393ca0b1e3f) | Merge pull request #11 from maprobst/claude/github-action-issue-email-ZwovJ |
 | 2026-04-28 14:26 UTC | maprobst | `main` | [e9041d4](https://github.com/maprobst/sig-pages/commit/e9041d4298b2982322d2a41905da6f0727eb7e0f) | Update issue-notify.yml |
 | 2026-04-28 14:29 UTC | maprobst | `main` | [7d12750](https://github.com/maprobst/sig-pages/commit/7d127507948180fe035d5e9197e174eb142dea37) | Update issue-notify.yml |
+| 2026-05-01 09:57 UTC | maprobst | `main` | [a961e49](https://github.com/probstla/sig-pages/commit/a961e496e21290b26b94175c788609dd99705e0e) | Feat/bypass main branch (#15) |
 <!-- COMMITS_END -->
