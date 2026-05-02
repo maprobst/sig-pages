@@ -3,6 +3,7 @@ name: Notify SIG AI Members on New Issue
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
