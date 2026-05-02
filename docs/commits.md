@@ -23,4 +23,5 @@
 | 2026-05-01 15:19 UTC | maprobst | `main` | [9e961af](https://github.com/probstla/sig-pages/commit/9e961afa38e5522010a47821d870011e7cb8cfaf) | Fix if check (#19) |
 | 2026-05-01 15:35 UTC | maprobst | `main` | [37359e7](https://github.com/probstla/sig-pages/commit/37359e73718fdc0851d39469726b99a7badebc3f) | test-meger (#20) |
 | 2026-05-01 16:32 UTC | maprobst | `main` | [1fe5e0c](https://github.com/probstla/sig-pages/commit/1fe5e0c3bf5438a677bb14cce375a9cccae6b082) | testing with approver (#22) |
+| 2026-05-02 10:06 UTC | maprobst | `main` | [3b0f0ac](https://github.com/probstla/sig-pages/commit/3b0f0acfec6603e91e002d23121405f9432e5c27) | Feat/add comment issue (#25) |
 <!-- COMMITS_END -->
